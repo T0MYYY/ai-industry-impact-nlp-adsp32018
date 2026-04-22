@@ -4,9 +4,9 @@ An end-to-end NLP pipeline that mines ~200K tech news articles to answer a core 
 
 Motivated by the 2023 Goldman Sachs report estimating ~25% of US/Europe tasks are automatable by AI, and validated by Facebook Research's Moravec's Paradox findings — that AI disrupts cognitive/office work far more than physical/sensorimotor tasks.
 
-**Course:** NLP Final Project | UC Davis  
+**Course:** ADSP 32018 — Next-Gen NLP: Transformers, LLMs and Agentic AI in Practice | University of Chicago  
 **Author:** Chiyang Chen (Tom)  
-**Dataset:** ~200K news articles on AI, ML, and data science (CDC BRFSS / Google Cloud Storage)
+**Dataset:** ~200K news articles on AI, ML, and data science
 
 ---
 
@@ -90,20 +90,6 @@ See the presentation slides and `06_presentation_assets.ipynb` for the full anal
 - Company-level sentiment breakdown (who is positioned positively vs. at risk)
 - Temporal trends in AI adoption sentiment (2020–2023)
 - Technologies driving impact (LLMs, automation tools, robotics)
-
----
-
-## Data Access
-
-```python
-import pandas as pd
-df = pd.read_parquet(
-    'https://storage.googleapis.com/msca-bdp-data-open/news_final_project/news_final_project.parquet',
-    engine='pyarrow'
-)
-```
-
-Raw data is not included in this repository due to size (~200K articles). Run the cell above to load it directly.
 
 ---
 
